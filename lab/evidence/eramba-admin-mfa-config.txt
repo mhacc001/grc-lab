@@ -1,0 +1,16 @@
+Evidence: Eramba admin console - MFA and network restriction
+Collected: 2026-10-15 by GRC Lab admin
+System: Eramba Lab Server (AWS EC2, us-east-1)
+
+1. Eramba Settings > Authentication Methods
+   - Local accounts: MFA (TOTP) REQUIRED for Admin group ........ ENABLED
+   - Password policy: min length 14, complexity on, 90-day expiry . ENABLED
+   - Account lockout after 5 failed attempts (15 min) ............. ENABLED
+
+2. AWS Security Group sg-eramba-admin (inbound)
+   - 8443/tcp  source: <admin home IP>/32    ALLOW
+   - 22/tcp    source: <admin home IP>/32    ALLOW
+   - 0.0.0.0/0 on 8443 ..................... REMOVED 2026-10-14
+
+Reviewer note: public exposure of the admin UI was removed; remaining
+gap is the self-signed TLS certificate (tracked in R1 treatment plan).

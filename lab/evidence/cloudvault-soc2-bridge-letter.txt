@@ -1,0 +1,13 @@
+CloudVault Backup Inc. (fictional lab vendor) - SOC 2 Type II Bridge Letter
+Report period covered: 2025-07-01 to 2026-06-30
+Bridge period: 2026-07-01 to 2026-10-15
+
+Management of CloudVault Backup Inc. confirms that there have been no material
+changes to the system of internal controls described in the SOC 2 Type II report
+since the end of the report period, and no known control failures affecting the
+Security, Availability or Confidentiality trust services criteria.
+
+Noted exception carried from report: CC7.4 - incident response tabletop exercise
+not performed within the period (remediation planned Q4 2026).
+
+[LAB DOCUMENT - fictional vendor created for GRC training purposes]

@@ -1,0 +1,6 @@
+account,role,justification,manager_decision,reviewed_by,review_date
+app_svc,read/write,Application service account,Retain,DB Owner,2026-10-01
+dba_admin,owner,Database administration,Retain,IT Ops Manager,2026-10-01
+analyst_01,read,Monthly reporting,Retain,Data Lead,2026-10-01
+analyst_02,read,Left team 2026-08,REVOKE,Data Lead,2026-10-01
+contractor_x,read/write,Migration project ended,REVOKE,IT Ops Manager,2026-10-01

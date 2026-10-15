@@ -1,0 +1,6 @@
+device_id,assigned_user,os_version,filevault_status,mdm_enrolled,remote_wipe_capable,last_checkin
+LT-001,employee01,macOS 15.6,On,Yes,Yes,2026-10-14
+LT-002,employee02,macOS 15.6,On,Yes,Yes,2026-10-14
+LT-003,employee03,macOS 15.5,On,Yes,Yes,2026-10-13
+LT-004,employee04,Windows 11 24H2,BitLocker On,Yes,Yes,2026-10-14
+LT-005,employee05,macOS 15.6,Off,No,No,2026-09-30

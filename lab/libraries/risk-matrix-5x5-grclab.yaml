@@ -1,0 +1,110 @@
+urn: urn:grclab:risk:library:risk-matrix-5x5-grclab
+locale: en
+ref_id: risk-matrix-5x5-grclab
+name: GRC Lab 5x5 multiplicative matrix
+description: 5x5 Likelihood x Impact (scores 1-25) with risk appetite Low 1-6, Medium 7-14, High 15-25
+copyright: GRC Lab
+version: 1
+publication_date: 2026-10-15
+provider: grclab
+packager: grclab
+objects:
+  risk_matrix:
+    - urn: urn:grclab:risk:matrix:5x5-grclab
+      ref_id: risk-matrix-5x5-grclab
+      name: GRC Lab 5x5 (Low 1-6 / Medium 7-14 / High 15-25)
+      description: Score = Likelihood x Impact. Appetite thresholds Low 1-6, Medium 7-14, High 15-25.
+      probability:
+        - id: 0
+          abbreviation: 1
+          name: "[1] Rare"
+          description: "<5% chance in a year"
+          hexcolor: "#92D050"
+        - id: 1
+          abbreviation: 2
+          name: "[2] Unlikely"
+          description: "5-25%"
+          hexcolor: "#D3FF4E"
+        - id: 2
+          abbreviation: 3
+          name: "[3] Possible"
+          description: "25-50%"
+          hexcolor: "#FFFF00"
+        - id: 3
+          abbreviation: 4
+          name: "[4] Likely"
+          description: "50-80%"
+          hexcolor: "#FFC000"
+        - id: 4
+          abbreviation: 5
+          name: "[5] Almost Certain"
+          description: ">80%"
+          hexcolor: "#FF0000"
+      impact:
+        - id: 0
+          abbreviation: 1
+          name: "[1] Insignificant"
+          description: "No measurable effect"
+          hexcolor: "#92D050"
+        - id: 1
+          abbreviation: 2
+          name: "[2] Minor"
+          description: "Limited, internal-only effect"
+          hexcolor: "#D3FF4E"
+        - id: 2
+          abbreviation: 3
+          name: "[3] Moderate"
+          description: "Service disruption or limited data exposure"
+          hexcolor: "#FFFF00"
+        - id: 3
+          abbreviation: 4
+          name: "[4] Major"
+          description: "Significant data breach, regulatory notice"
+          hexcolor: "#FFC000"
+        - id: 4
+          abbreviation: 5
+          name: "[5] Severe"
+          description: "Business-threatening loss, major fines"
+          hexcolor: "#FF0000"
+      risk:
+        - id: 0
+          abbreviation: L
+          name: Low
+          description: "1-6: Accept; monitor at annual review"
+          hexcolor: "#92D050"
+        - id: 1
+          abbreviation: M
+          name: Medium
+          description: "7-14: Treat within 90 days; owner sign-off required"
+          hexcolor: "#FFC000"
+        - id: 2
+          abbreviation: H
+          name: High
+          description: "15-25: Treat immediately; escalate to management"
+          hexcolor: "#FF0000"
+      grid:
+        - - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - - 0
+          - 0
+          - 0
+          - 1
+          - 1
+        - - 0
+          - 0
+          - 1
+          - 1
+          - 2
+        - - 0
+          - 1
+          - 1
+          - 2
+          - 2
+        - - 0
+          - 1
+          - 2
+          - 2
+          - 2
